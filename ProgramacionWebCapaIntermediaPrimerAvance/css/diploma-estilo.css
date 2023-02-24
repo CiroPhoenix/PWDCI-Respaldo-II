@@ -1,0 +1,31 @@
+.diploma-contenedor{
+text-align: center;
+    border-color: rgb(255, 102, 151) rgb(120, 0, 74) rgb(255, 102, 151) rgb(120, 0, 74);
+    border-width: 20px;
+    border-style: solid;
+   color: rgb(214, 1, 179);
+    background-size: cover;
+    margin-top: 150px;
+    padding: 10px;
+ 
+   
+    background-image: url("img/SaturnoLogo.png");
+}
+
+
+.diploma-contenedor h1{
+    -webkit-text-stroke: 2px black;
+    }
+    
+
+body{
+   background-repeat: no-repeat;
+   background-size: cover;
+    background-image: url('SaturnoBackground.jpg');
+}
+
+.imagen-diploma img{
+    width: 42%;
+    height: 42%;
+    float: left;
+}
