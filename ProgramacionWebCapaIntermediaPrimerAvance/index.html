@@ -45,7 +45,7 @@
 <body style="background-image: url('img/SaturnoBackground.jpg');">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../index.html">
             <img src="img/SaturnoLogo.png" alt="logo" width="150px">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,8 +82,51 @@
               <button><a class="link" href="register.html">Registrarse</a></button>
 
             </form>
+
+            <div class="user-pic">
+              <img src="img/ProfilePicture.png" class="user-pic" onclick="toggleMenu()" >
+            </div>
+          
           </div>
         </div>
+
+
+<div class="sub-menu-wrap" id="subMenu">
+
+  <div class="sub-menu">
+    <div class="user-info">
+      <img src="img/ProfilePicture.png">
+      
+      <p>Maestro</p>
+    <br>
+      <h3>Carlos Villagran</h3>
+      
+    </div>
+    <hr>
+
+  <a href="#" class="sub-menu-link">
+
+  <img src="img/Profile.png">
+  <p>Editar Perfil</p>
+<span>></span>
+
+  </a>
+
+
+
+      <a href="#" class="sub-menu-link">
+
+        <img src="img/Logout.png">
+        <p>Cerrar Sesion</p>
+      <span>></span>
+      
+        </a>
+
+
+  </div>
+</div>
+
+
       </nav>
 
 
@@ -109,15 +152,16 @@
 </div>
 
 
-<div class="container p-5 mt-2" style="background-color: rgb(189, 6, 67); background-repeat: no-repeat; background-size: cover;" >
+<div class="container p-5 mt-2" style="background-color: rgb(179, 179, 179); background-repeat: no-repeat; background-size: cover;   border-color: rgb(255, 102, 151) rgb(120, 0, 74) rgb(255, 102, 151) rgb(120, 0, 74); border-width: 20px;
+border-style: solid;" >
   <div class="row d-flex justify-content-center">
 <div class="col-md-6">
 
 
 <div class="input-group">
-<input type="text"  placeholder="search" class="form-control" id="inp">
+<input type="text"  placeholder="¿Que te gustaria aprender?" class="form-control" id="inp">
 <div class="input-group-append">
-<button type="button" class="btn btn-dark" id="search" >Search</button>
+<button type="button" class="btn btn-dark" id="search" >Buscar</button>
 </div>
 </div>
 </div>
@@ -128,7 +172,7 @@
   <i class="fas fa-shopping-cart fa-2x ml-md-5">  </i>
   </div>
   
-  <span class="badge badge-sucess mt-0 align-self-start" id="cart_item_count" style="margin-left: -25
+  <span style="background-color: black;" class="badge badge-sucess mt-0 align-self-start" id="cart_item_count" style="margin-left: -25
   px; margin-top: -5px;">0</span>
   
    </div>
@@ -325,7 +369,18 @@ absolute;z-index: 1;top: 80px;overflow: auto;">
 
 </div>
 
+<script>
 
+  let subMenu = document.getElementById("subMenu");
+
+  function toggleMenu(){
+
+subMenu.classList.toggle("open-menu");
+
+  }
+
+
+</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

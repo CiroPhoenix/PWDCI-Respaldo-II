@@ -1,6 +1,6 @@
 .diploma-contenedor{
 text-align: center;
-    border-color: rgb(255, 102, 151) rgb(120, 0, 74) rgb(255, 102, 151) rgb(120, 0, 74);
+    border-color: rgb(242, 0, 0) rgb(65, 4, 3) rgb(242, 0, 0) rgb(65, 4, 3);
     border-width: 20px;
     border-style: solid;
    color: rgb(229, 26, 26);
@@ -21,7 +21,7 @@ text-align: center;
 body{
    background-repeat: no-repeat;
    background-size: cover;
-    background-image: url('SaturnoBackground.jpg');
+   
 }
 
 .imagen-diploma img{
