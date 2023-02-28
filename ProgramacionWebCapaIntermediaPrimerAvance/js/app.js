@@ -15,7 +15,11 @@ reader.onload=function(){
 
 }
 
-const nombre = document.getElementById("name")
+const usuario = document.getElementById("nombre_usuario")
+const usuario_paterno = document.getElementById("nombre_usuario_paterno")
+const usuario_materno= document.getElementById("nombre_usuario_materno")
+
+
 const email = document.getElementById("email")
 const pass = document.getElementById("password")
 const form = document.getElementById("form")
@@ -30,10 +34,28 @@ form.addEventListener("submit", e=>{
      let RegexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#])[A-Za-z\d$@$!%*?&#]{8}/ 
      parrafo.innerHTML = ""
    
-     if(nombre.value.length <6){
-     warnings += `El nombre no es valido <br>`
+     if(usuario.value.length <6){
+     warnings += `El nombre de usuario no es valido <br>`
      entrar = true
     }
+
+
+
+    if(usuario_paterno.value.length <6){
+        warnings += `El nombre paterno del usuario no es valido <br>`
+        entrar = true
+       }
+
+       
+
+       if(usuario_materno.value.length <6){
+        warnings += `El nombre materno del usuarios no es valido <br>`
+        entrar = true
+       }
+   
+
+
+
     console.log(RegexEmail.test(email.value))
     if(!RegexEmail.test(email.value)){
         warnings += `El email no es valido <br>`
