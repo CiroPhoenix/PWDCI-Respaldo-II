@@ -7,8 +7,13 @@ reader.onload=function(){
     let preview = document.getElementById('preview');
     imagen = document.createElement('img');
     imagen.src = reader.result;
-    imagen.style.width="320px";
-    imagen.style.height="320px";
+    imagen.style.width="360px";
+    imagen.style.height="360px";
+    imagen.style.border="50px";
+    imagen.style.margin= "15px";
+    
+
+
     preview.append(imagen);
 
 }
@@ -18,8 +23,8 @@ reader.onload=function(){
 const usuario = document.getElementById("nombre_usuario")
 const usuario_paterno = document.getElementById("nombre_usuario_paterno")
 const usuario_materno= document.getElementById("nombre_usuario_materno")
-
-
+const genero= document.getElementById("genero")
+const rol= document.getElementById("rol")
 const email = document.getElementById("email")
 const pass = document.getElementById("password")
 const form = document.getElementById("form")
@@ -46,7 +51,17 @@ form.addEventListener("submit", e=>{
         entrar = true
        }
 
+
+       if(genero.value == 0 || genero.value==""){
+        warnings += `Selecciona su genero <br>`
+        entrar = true
+       }
        
+
+       if(rol.value == 0 || rol.value==""){
+        warnings += `Selecciona su rol <br>`
+        entrar = true
+       }
 
        if(usuario_materno.value.length <6){
         warnings += `El nombre materno del usuarios no es valido <br>`
@@ -71,6 +86,7 @@ form.addEventListener("submit", e=>{
     parrafo.innerHTML = warnings
    }else{
     parrafo.innerHTML = "Enviado"
+    location.href='../index.html';
    }
 
 
